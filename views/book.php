@@ -31,6 +31,7 @@ include('templates/header.php') ?>
                 <th>Title</th>
                 <th>Author</th>
                 <th>Year</th>
+                <th>pinjam buku</th>
             </tr>
         </thead>
         <tbody>
@@ -40,6 +41,9 @@ include('templates/header.php') ?>
                 <th><?= $book->getTitle()?></th>
                 <th><?= $book->getAuthor()?></th>
                 <th><?= $book->getYear()?></th>
+                <th>
+                <button onclick="window.location.href='pinjambuku.php?id=<?= $index ?>'">See More</button>
+                </th>
             </tr>
             <?php endforeach ?>
         </tbody>

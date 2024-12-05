@@ -25,8 +25,11 @@ if ($uri == '/book?' . $query_string) {
     return require 'controllers/BookController.php';
 }
 
-if ($uri == '/login' || $uri == '/register') {
+if ($uri == '/register') {
     return require 'controllers/AuthController.php';
+}
+if ($uri == '/login'){
+    return require 'controllers/LoginController.php';
 }
 
 return require 'views/notFoundPage.php';

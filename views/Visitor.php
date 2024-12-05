@@ -6,10 +6,6 @@ if (!defined('SECURE_ACCES')){
 }
 
 if (isset($_SESSION['is_login']) == false) {
-    header("location: /register");
-}
-
-if (isset($_SESSION['is_login']) == false) {
     header("location: /login");
 }
 
