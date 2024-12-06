@@ -10,7 +10,7 @@ include('templates/header.php') ?>
             <div class="logo">
                 <img src="assets/images/logo-black.png" alt="Logo">
             </div>
-            <a href="views/login.php"><i class="fa-duotone fa-house-chimney"></i></a>
+            <a href="/"><i class="fa-duotone fa-house-chimney"></i></a>
         </div>
         <div class="bottom">
             <h3 class="panel-title">Login</h3>

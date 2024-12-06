@@ -1,8 +1,7 @@
 <?php
-
 $number = 1;
-if (!defined('SECURE_ACCES')){
-    die('ga ndue akses bolo');
+if (!defined('SECURE_ACCESS')) {
+    die('Direct access not permitted');
 }
 
 if (isset($_SESSION['is_login']) == false) {
@@ -15,4 +14,3 @@ include('templates/header.php') ?>
 
 
 <?php include('templates/footer.php') ?>
-

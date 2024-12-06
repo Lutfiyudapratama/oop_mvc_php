@@ -1,13 +1,14 @@
-
 <?php
+
+
 require 'Controller.php';
+
 class MembershipController extends Controller
 {
-    public static function index()
+    static function index()
     {
-        return self::view('views/Membership.php');
+        return self::view('views/membership.php');
     }
-
 }
+
 MembershipController::index();
-?>

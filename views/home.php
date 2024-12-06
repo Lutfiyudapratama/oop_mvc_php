@@ -1,9 +1,8 @@
-<?php 
-if (!defined('SECURE_ACCES')){
-    die('ga ndue akses bolo');
+<?php
+if (!defined('SECURE_ACCESS')) {
+    die('Direct access not permitted');
 }
-include('templates/header.php')
-?>
+include('templates/header.php') ?>
 
 <div class="main-content login-panel login-panel-2">
     <h3 class="panel-title">Welcome! @ PI SCHOOL LIBRARY</h3>
@@ -31,7 +30,6 @@ include('templates/header.php')
             </a>
         </div>
     </div>
-    
 
     <div class="footer">
         <p>Copyright© <script>
