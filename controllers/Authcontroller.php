@@ -52,11 +52,11 @@ class AuthController extends Controller
             die();
         }
         return self::view("views/register.php");
+        return AuthController::register();
     }
 }
 
 if ($uri == '/login') {
     return AuthController::index();
 }
-
-AuthController::register();
+return AuthController::register();

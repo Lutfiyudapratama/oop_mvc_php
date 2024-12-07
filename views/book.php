@@ -8,7 +8,7 @@ include('templates/header.php') ?>
 
 <div class="main-content bg-white">
     <section class="container my-5">
-        <h3 class="panel-title text-center">Search Book @ PI SCHOOL LIBRARY</h3>
+        <h3 class="panel-title text-center">Fiiiiiiilfi LIBRARY</h3>
         <form class="d-flex justify-content-between align-items-center" action="/search" method="GET">
             <input
                 type="text"

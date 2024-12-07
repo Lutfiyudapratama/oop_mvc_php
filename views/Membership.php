@@ -5,7 +5,7 @@ if (!defined('SECURE_ACCESS')) {
 }
 
 if (isset($_SESSION['is_login']) == false) {
-    header("location: /login");
+    header("location: /register");
 }
 
 include('templates/header.php') ?>

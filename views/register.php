@@ -4,7 +4,7 @@ if (!defined('SECURE_ACCESS')) {
 }
 
 if (isset($_SESSION['is_login']) == false) {
-    header("location: /login");
+    header("location: /register");
 }
 if ($_SESSION['role_id'] != 1) {
     echo "Tidak memiliki akses";
