@@ -22,10 +22,12 @@ if ($uri == '/book') {
     return require 'controllers/BookController.php';
 }
 
-if ($uri == '/book?' . $query_string) {
+if ($uri == '/book' . $query_string) {
     return require 'controllers/BookController.php';
 }
-if ($uri == '/borrow' . $query_string) {
+
+
+if ($uri == '/borrow') {
     return require 'controllers/BorrowController.php';
 }
 

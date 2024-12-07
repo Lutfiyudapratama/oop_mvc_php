@@ -9,7 +9,7 @@ include('templates/header.php') ?>
 <div class="main-content bg-white">
     <section class="container my-5">
         <h3 class="panel-title text-center">Search Book @ PI SCHOOL LIBRARY</h3>
-        <form class="d-flex justify-content-between align-items-center">
+        <form class="d-flex justify-content-between align-items-center" action="/search" method="GET">
             <input
                 type="text"
                 class="form-control"
@@ -37,7 +37,7 @@ include('templates/header.php') ?>
                             <td><?= $book->getAuthor() ?></td>
                             <td><?= $book->getYear() ?></td>
                             <td>
-                                <form action="Borrow.php" method="post">
+                                <form action="/borrow" method="POST">
                                     <button type="submit">Borrow</button>
                                 </form>
 
