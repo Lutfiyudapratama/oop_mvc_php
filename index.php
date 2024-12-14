@@ -31,6 +31,10 @@ if ($uri == '/borrow') {
     return require 'controllers/BorrowController.php';
 }
 
+if ($uri == '/information') {
+    return require 'controllers/InformationController.php';
+}
+
 if ($uri == '/login' || $uri == '/register') {
     return require 'controllers/AuthController.php';
 }
