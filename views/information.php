@@ -9,44 +9,17 @@ include('templates/header.php') ?>
 <div class="main-content bg-white">
     <section class="container my-5">
         <h3 class="panel-title text-center">Fiiiiiiilfi LIBRARY</h3>
-        <form action="/borrow" method="POST">
-        <button class="btn btn-primary w-100 login-btn" type="submit">Pinjam buku</button>
-        </form>
-        <br>
-        <form class="d-flex justify-content-between align-items-center" action="/search" method="GET">
-            <input
-                type="text"
-                class="form-control"
-                placeholder="Cari Buku"
-                name="search"
-                required />
-            <button class="btn btn-sm btn-primary mx-3">Search</button>
-        </form>
         <div class="table table-responsive my-4">
             <table class="table">
                 <thead>
                     <tr>
                         <th>No</th>
-                        <th>Title</th>
-                        <th>Author</th>
-                        <th>Year</th>
-                        <th>Borrow</th>
+                        <th>Username</th>
+                        <th>Start date</th>
+                        <th>Name book</th>
+                        <th>End date</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <?php foreach ($data as $book) : ?>
-                        <tr>
-                            <td><?= $number++ ?></td>
-                            <td><?= $book->getTitle() ?></td>
-                            <td><?= $book->getAuthor() ?></td>
-                            <td><?= $book->getYear() ?></td>
-                            <td>
-
-
-                            </td>
-                        </tr>
-                    <?php endforeach ?>
-                </tbody>
             </table>
         </div>
         <div class="d-flex justify-content-center mb-0">

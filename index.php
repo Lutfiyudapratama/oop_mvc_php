@@ -36,7 +36,7 @@ if ($uri == '/information') {
 }
 
 if ($uri == '/login' || $uri == '/register') {
-    return require 'controllers/AuthController.php';
+    return require 'controllersAuthController.php';
 }
 
 return require 'views/notFoundPage.php';

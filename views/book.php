@@ -30,7 +30,6 @@ include('templates/header.php') ?>
                         <th>Title</th>
                         <th>Author</th>
                         <th>Year</th>
-                        <th>Borrow</th>
                     </tr>
                 </thead>
                 <tbody>

@@ -4,7 +4,7 @@ if (!defined('SECURE_ACCESS')) {
     die('Direct access not permitted');
 }
 
-if (isset($_SESSION['is_login']) == false) {
+if (isset($_SESSION['is_register']) == false) {
     header("location: /register");
 }
 
