@@ -18,7 +18,7 @@ include 'templates/header.php' ?>
                             <div class="bottom">
                                 <h3 class="panel-title">Peminjaman buku</h3>
                                 <!-- <label for="username" class="form-label">Username</label> -->
-                                <form method="POST" action="/login">
+                                <form action="/information" method="POST">
                                     <div class="input-group mb-25">
                                         <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
                                         <input
@@ -36,13 +36,12 @@ include 'templates/header.php' ?>
                                             name="start_peminjaman">
                                     </div>
                                     <div class="input-group mb-25">
-                                        <span class="input-group-text"><i class="fa-regular fa-book"></i></span>
-                                        <input
-                                            type="text"
-                                            class="form-control"
-                                            placeholder="Buku yang akan di pinjam"
-                                            name="search"
-                                            required>
+                                        <select name="book_id" class="form-select" aria-label="Pilih Buku">
+                                            <option value="">Pilih Buku</option>
+                                            <?php foreach ($data as $book) : 
+                                                echo"<option value='{$book->getId()}'>{$book->getTitle()} - {$book->getAuthor()}</option>"?>
+                                            <?php endforeach ?>
+                                        </select>
                                     </div>
                                     <div class="input-group mb-25">
                                         <span class="input-group-text"><i class="fa-regular fa-calendar"></i></span>
@@ -52,7 +51,7 @@ include 'templates/header.php' ?>
                                             placeholder="end_peminjaman"
                                             name="end_peminjaman">
                                     </div>
-                                    <form action="/information" method="POST">
+                                   
                                         <button class="btn btn-primary w-100 login-btn" type="submit">Pinjam buku</button>
                                     </form>
                             </div>
