@@ -18,12 +18,43 @@ include 'templates/header.php' ?>
                             <div class="bottom">
                                 <h3 class="panel-title">Peminjaman buku</h3>
                                 <!-- <label for="username" class="form-label">Username</label> -->
-                                <form method="POST" action="/information">
-                                   <input type="text" placeholder="username" name="username" class="form-control" id="username">
-                                   <input type="text" placeholder="username" name="username" class="form-control" id="username">
-                                </form>
-
-
+                                <form method="POST" action="/login">
+                                    <div class="input-group mb-25">
+                                        <span class="input-group-text"><i class="fa-regular fa-user"></i></span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Username"
+                                            name="username">
+                                    </div>
+                                    <div class="input-group mb-25">
+                                        <span class="input-group-text"><i class="fa-regular fa-calendar"></i></span>
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            placeholder="start_peminjaman"
+                                            name="start_peminjaman">
+                                    </div>
+                                    <div class="input-group mb-25">
+                                        <span class="input-group-text"><i class="fa-regular fa-book"></i></span>
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            placeholder="Buku yang akan di pinjam"
+                                            name="search"
+                                            required>
+                                    </div>
+                                    <div class="input-group mb-25">
+                                        <span class="input-group-text"><i class="fa-regular fa-calendar"></i></span>
+                                        <input
+                                            type="date"
+                                            class="form-control"
+                                            placeholder="end_peminjaman"
+                                            name="end_peminjaman">
+                                    </div>
+                                    <form action="/information" method="POST">
+                                        <button class="btn btn-primary w-100 login-btn" type="submit">Pinjam buku</button>
+                                    </form>
                             </div>
                             <div class="d-flex justify-content-center mb-0">
                                 <div class="my-4">
